@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: jp.co.gxp
+testFramework: spock
+sourceLanguage: java
+buildTool: gradle
+features: [ annotation-api, app-name, graalvm, gradle, http-client, java, java-application, jetty-server, log4j2, micronaut-build, readme, shade, spock, yaml ]
