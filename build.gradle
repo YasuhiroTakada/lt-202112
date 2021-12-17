@@ -36,7 +36,6 @@ artifactory {
             username = "${artifactory_user}"
             password = "${artifactory_password}"
             maven = true
-
         }
     }
 }
@@ -62,17 +61,14 @@ dependencies {
     runtimeOnly("org.apache.logging.log4j:log4j-api:2.14.0")
     runtimeOnly("org.apache.logging.log4j:log4j-slf4j-impl:2.14.0")
     compileOnly("org.graalvm.nativeimage:svm")
-
     implementation("io.micronaut:micronaut-validation")
-
 }
-
 
 application {
     mainClass.set("jp.co.gxp.Application")
 }
+
 java {
     sourceCompatibility = JavaVersion.toVersion("17")
     targetCompatibility = JavaVersion.toVersion("17")
 }
-
